@@ -1,0 +1,34 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "UA Girls Keep in Tech landing page. Technologies: html, Tailwind CSS, Alpine.js, GSAP",
+  "main": "index.js",
+  "homepage": "https://UAgirlsKIT.github.io/landing_page/",
+  "scripts": {
+    "watch": "parcel index.html --open --port 3000",
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /landing_page/ --no-cache",
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "postbuild": "cp ./dist/output.css ./src/dist/output.css",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UAgirlsKIT/landing_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UAgirlsKIT/landing_page/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "posthtml-include": "^1.7.4",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "posthtml-img-autosize": "^0.1.6"
+  }
+}
