@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "UA Girls Keep in Tech landing page. Technologies: html, Tailwind CSS, Alpine.js, GSAP",
   "main": "index.js",
-  "homepage": "https://UAgirlesKIT.github.io/landing_page/",
+  "homepage": "https://UAgirlsKIT.github.io/landing_page/",
   "scripts": {
     "watch": "parcel index.html --open --port 3000",
     "dev": "parcel src/*.html",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UAgirlesKIT/landing_page.git"
+    "url": "git+https://github.com/UAgirlsKIT/landing_page.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/UAgirlesKIT/landing_page/issues"
+    "url": "https://github.com/UAgirlsKIT/landing_page/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
