@@ -9,7 +9,6 @@
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /landing_page/ --no-cache",
     "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "postbuild": "cp ./dist/output.css ./src/dist/output.css",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
