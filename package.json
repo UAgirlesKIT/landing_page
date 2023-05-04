@@ -7,10 +7,11 @@
   "scripts": {
     "watch": "parcel index.html --open --port 3000",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /landing_page/ --no-cache",
+    "build": " parcel build src/*.html --public-url /landing_page/ --no-cache --entry src/input.css",
     "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "postbuild": "cp ./dist/output.css ./src/dist/output.css",
     "deploy": "gh-pages -d dist"
+
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,5 @@
   },
   "dependencies": {
     "posthtml-img-autosize": "^0.1.6"
-  },
-  "parcelPluginStaticFilesCopy": {
-    "extensions": [
-      ".html"
-    ]
   }
 }
