@@ -11,7 +11,6 @@
     "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "postbuild": "cp ./dist/output.css ./src/dist/output.css",
     "deploy": "gh-pages -d dist"
-
   },
   "repository": {
     "type": "git",
