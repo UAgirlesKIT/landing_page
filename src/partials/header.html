@@ -1,15 +1,32 @@
-<header class="bg-purple-200">
-    <div>
-        <a class="company" href="/index.html" id="logo">
+<header class="bg-purple-200 px-10 py-16 max-w-screen-xl mx-auto box-border max-w-screen-xl mx-auto">
+    <div class="flex justify-between items-center">
+        <a href="/index.html" id="logo">
             <img src="/images/logo.svg" alt="company logo" width="129" height="80" />
         </a>
+        <nav>
+            <ul class="flex">
+                <li class="px-4 md:px-10">
+                    <a class="text-lg font-bold" href="">Про нас</a>
+                </li>
+                <li class="px-4 md:px-10">
+                    <a class="text-lg font-bold" href="">Що вміємо</a>
+                </li>
+                <li class="px-4 md:px-10">
+                    <a class="text-lg font-bold" href="">Чому ми?</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="px-2 md:px-4 py-1 rounded-full text-lg bg-pink-400 text-white block font-bold">
+            Зв'язатися
+        </button>
     </div>
-    <nav>
-        <ul class="flex">
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Що вміємо</a></li>
-            <li><a href="">Чому ми?</a></li>
-        </ul>
-    </nav>
-    <button>Зв'язатися</button>
+    <section class="flex items-center justify-between mt-6 md:mt-0">
+        <h1 class="w-3/12 font-medium text-lg md:text-2xl">
+            Привіт, ми українські дівчата, котрі знайшли себе у front-end розробці та
+            прагнуть у ній розвиватись.
+        </h1>
+        <div class="rounded-tl-10xl rounded-tr-7xl rounded-bl-20xl rounded-br-20xl -rotate-12 bg-white rounded-full">
+            <img class="rotate-12" src="/images/herosection.png" alt="Girls" />
+        </div>
+    </section>
 </header>

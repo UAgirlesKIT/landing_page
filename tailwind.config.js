@@ -7,7 +7,7 @@ module.exports = {
       current: 'currentColor',
       'white': '#ffffff',
       'main': '#F1DCFC',
-      'btn-color': '#FF66C4',
+      'btn-cl': '#FF66C4',
       'accent-cl': "#FF27AC",
       'midnight': '#121063',
       // 'metal': '#565584',
