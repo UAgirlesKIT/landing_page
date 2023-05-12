@@ -7,9 +7,8 @@
   "scripts": {
     "watch": "parcel index.html --open --port 3000",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /landing_page/",
-
-     "start": "npx tailwindcss -i ./src/input.css -o --watch",
+    "build": "parcel build src/*.html --public-url /landing_page/ --no-cache",
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
