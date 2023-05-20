@@ -2,51 +2,317 @@
   <div class="px-10 pt-14 pb-11 box-border max-w-screen-xl mx-auto relative">
     <h2 class="font-bold text-3xl text-center">Команда</h2>
     <ul class="py-14 grid grid-cols-2 md:grid-cols-4 gap-6">
-      <li class="relative border-4 border-[#9D7FAD] rounded">
+      <li
+        x-data="{ open: false }"
+        @click="open = ! open"
+        @mouseover="open = true"
+        @mouseleave="open = false"
+        @click.outside="open = false"
+        :class="[open ? 'opacity-100' : 'opacity-80']"
+        class="h-60 relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+      >
         <img
-          class="opacity-70 w-[100%] max-w-full hover:opacity-100 hover:cursor-pointer ease-in-out duration-300 h-auto rounded-lg"
-          src="/images/logo.svg"
+          class="w-[100%] max-w-full h-full rounded-lg"
+          src="/images/alla-honcharova.jpg"
           alt="team member"
         />
-        <div class="absolute bottom-0 opacity-90 bg-purple-200 text-indigo-950">
-          <p>name</p>
-          <p>description</p>
+        <div
+          class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+        >
+          <p class="font-medium text-center">Алла Гончарова</p>
+          <div
+            class="flex flex-col gap-1"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ase-out duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            x-cloak
+          >
+            <ul>
+              <li class="text-center">Web розробка</li>
+            </ul>
+            <div class="flex justify-center gap-2">
+              <a href="https://github.com/alla2021" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/github.svg"
+                  alt="github"
+                  width="20"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/alla-honcharova"
+                target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+              /></a>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="relative">
+      <li
+        x-data="{ open: false }"
+        @click="open = ! open"
+        @mouseover="open = true"
+        @mouseleave="open = false"
+        @click.outside="open = false"
+        :class="[open ? 'opacity-100' : 'opacity-80']"
+        class="h-60 relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+      >
         <img
-          class="opacity-70 hover:opacity-100 hover:cursor-pointer ease-in-out duration-300 h-auto max-w-full rounded-lg"
-          src="/images/logo.svg"
+          class="w-[100%] max-w-full h-full rounded-lg"
+          src="/images/krykinova-dianna.jpg"
           alt="team member"
-          width="250"
         />
-        <div class="absolute bottom-0 opacity-90 bg-purple-200 text-indigo-950">
-          <p>name</p>
-          <p>description</p>
+        <div
+          class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+        >
+          <p class="font-medium text-center">Діанна Крикунова</p>
+          <div
+            class="flex flex-col gap-1"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ase-out duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+          >
+            <ul>
+              <li class="text-center">Дизайн</li>
+            </ul>
+            <div class="flex justify-center gap-2">
+              <a href="https://github.com/PuhLopuh" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/github.svg"
+                  alt="github"
+                  width="20"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/dianna-krykunova-893247270/"
+                target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+              /></a>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="relative">
+      <li
+        x-data="{ open: false }"
+        @click="open = ! open"
+        @mouseover="open = true"
+        @mouseleave="open = false"
+        @click.outside="open = false"
+        :class="[open ? 'opacity-100' : 'opacity-80']"
+        class="h-60 relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+      >
         <img
-          class="opacity-70 hover:opacity-100 hover:cursor-pointer ease-in-out duration-300 h-auto max-w-full rounded-lg"
-          src="/images/logo.svg"
+          class="w-[100%] max-w-full h-full rounded-lg"
+          src="/images/halyna-stepanenko.jpg"
           alt="team member"
-          width="250"
         />
-        <div class="absolute bottom-0 opacity-90 bg-purple-200 text-indigo-950">
-          <p>name</p>
-          <p>description</p>
+        <div
+          class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+        >
+          <p class="font-medium text-center">Галина Степаненко</p>
+          <div
+            class="flex flex-col gap-1"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ase-out duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+          >
+            <ul>
+              <li class="text-center">Верстка</li>
+            </ul>
+            <div class="flex justify-center gap-2">
+              <a href="https://github.com/galinavikst" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/github.svg"
+                  alt="github"
+                  width="20"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/halyna-stepanenko/"
+                target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+              /></a>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="relative">
+      <li
+        x-data="{ open: false }"
+        @click="open = ! open"
+        @mouseover="open = true"
+        @mouseleave="open = false"
+        @click.outside="open = false"
+        :class="[open ? 'opacity-100' : 'opacity-80']"
+        class="h-60 relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+      >
         <img
-          class="opacity-70 hover:opacity-100 hover:cursor-pointer ease-in-out duration-300 h-auto max-w-full rounded-lg"
-          src="/images/logo.svg"
+          class="w-[100%] max-w-full h-full rounded-lg"
+          src="/images/Kolesnikova.webp"
           alt="team member"
-          width="250"
         />
-        <div class="absolute bottom-0 opacity-90 bg-purple-200 text-indigo-950">
-          <p>name</p>
-          <p>description</p>
+        <div
+          class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+        >
+          <p class="font-medium text-center">Олександра Колеснікова</p>
+          <div
+            class="flex flex-col gap-1"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ase-out duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+          >
+            <ul>
+              <li class="text-center">Tехнічний стек</li>
+              <li class="text-center">Канбан</li>
+              <li class="text-center">Документація</li>
+            </ul>
+            <div class="flex justify-center gap-2">
+              <a href="https://github.com/AleKoles" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/github.svg"
+                  alt="github"
+                  width="20"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/oleksandra-kolesnikova/"
+                target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        x-data="{ open: false }"
+        @click="open = ! open"
+        @mouseover="open = true"
+        @mouseleave="open = false"
+        @click.outside="open = false"
+        :class="[open ? 'opacity-100' : 'opacity-80']"
+        class="h-60 relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+      >
+        <img
+          class="w-[100%] max-w-full h-full rounded-lg"
+          src="/images/olha-zarichna.jpg"
+          alt="team member"
+        />
+        <div
+          class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+        >
+          <p class="font-medium text-center">Ольга Зарічна</p>
+          <div
+            class="flex flex-col gap-1"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ase-out duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+          >
+            <ul>
+              <li class="text-center">Верстка</li>
+            </ul>
+            <div class="flex justify-center gap-2">
+              <a href="https://github.com/Olyazarichna" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/github.svg"
+                  alt="github"
+                  width="20"
+              /></a>
+              <a href="http://linkedin.com/in/olya-zarichna" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        x-data="{ open: false }"
+        @click="open = ! open"
+        @mouseover="open = true"
+        @mouseleave="open = false"
+        @click.outside="open = false"
+        :class="[open ? 'opacity-100' : 'opacity-80']"
+        class="h-60 relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+      >
+        <img
+          class="w-[100%] max-w-full h-full rounded-lg"
+          src="/images/svitlana-rudyeva.jpg"
+          alt="team member"
+        />
+        <div
+          class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+        >
+          <p class="font-medium text-center">Світлана Рудєва</p>
+          <div
+            class="flex flex-col gap-1"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ase-out duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+          >
+            <ul>
+              <li class="text-center">Менеджер</li>
+            </ul>
+            <div class="flex justify-center gap-2">
+              <a href="https://github.com/Switlo" target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/github.svg"
+                  alt="github"
+                  width="20"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/svitlana-rudyeva-19156a181/"
+                target="_blank"
+                ><img
+                  class="opacity-50 hover:scale-105 ease-in 150ms"
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+              /></a>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
