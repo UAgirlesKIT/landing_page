@@ -1,5 +1,7 @@
 <section id="team" class="">
-  <div class="px-10 pt-20 pb-11 box-border max-w-screen-xl mx-auto relative">
+  <div
+    class="sm:px-10 px-4 pt-20 pb-11 box-border max-w-screen-xl mx-auto relative"
+  >
     <div
       class="absolute -z-[1] left-[50%] -translate-x-1/2 -translate-y-1/2 flex justify-center gap-[50px]"
     >
@@ -327,7 +329,7 @@
         </div>
       </li>
     </ul> -->
-    <div class="py-14 columns-2 md:columns-4">
+    <div class="py-14 columns-2 lg:columns-4 md:columns-3">
       <div class="mb-4">
         <div
           x-data="{ open: false }"
@@ -343,22 +345,24 @@
             alt="team member"
           />
           <div
-            class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            class="flex flex-col lg:p-2 pb-1 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:leave="transition ease-out duration-300"
+            x-cloak
           >
-            <p class="font-medium text-center">Алла Гончарова</p>
-            <div
-              class="flex flex-col gap-1"
-              x-show="open"
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="opacity-0"
-              x-transition:enter-end="opacity-100"
-              x-transition:leave="transition ase-out duration-300"
-              x-transition:leave-start="opacity-100"
-              x-transition:leave-end="opacity-0"
-              x-cloak
+            <p
+              class="font-medium text-center sm:text-base text-xs leading-none lg:leading-normal"
             >
+              Алла Гончарова
+            </p>
+            <div class="flex flex-col gap-1">
               <ul>
-                <li class="text-center">Web розробка</li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Web розробка
+                </li>
               </ul>
               <div class="flex justify-center gap-2">
                 <a href="https://github.com/alla2021" target="_blank"
@@ -393,76 +397,28 @@
         >
           <img
             class="w-[100%] max-w-full h-full rounded-lg"
-            src="/images/olha-zarichna.png"
+            src="\images\dianna-krykunova.png"
             alt="team member"
           />
           <div
-            class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            class="flex flex-col lg:p-2 pb-1 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:leave="transition ease-out duration-300"
+            x-cloak
           >
-            <p class="font-medium text-center">Ольга Зарічна</p>
-            <div
-              class="flex flex-col gap-1"
-              x-show="open"
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="opacity-0"
-              x-transition:enter-end="opacity-100"
-              x-transition:leave="transition ase-out duration-300"
-              x-transition:leave-start="opacity-100"
-              x-transition:leave-end="opacity-0"
+            <p
+              class="font-medium text-center sm:text-base text-xs leading-none lg:leading-normal"
             >
+              Діанна Крикунова
+            </p>
+            <div class="flex flex-col gap-1">
               <ul>
-                <li class="text-center">Верстка</li>
-              </ul>
-              <div class="flex justify-center gap-2">
-                <a href="https://github.com/Olyazarichna" target="_blank"
-                  ><img
-                    class="opacity-50 hover:scale-105 ease-in 150ms"
-                    src="/images/github.svg"
-                    alt="github"
-                    width="20"
-                /></a>
-                <a href="http://linkedin.com/in/olya-zarichna" target="_blank"
-                  ><img
-                    class="opacity-50 hover:scale-105 ease-in 150ms"
-                    src="/images/linkedin.svg"
-                    alt="linkedin"
-                    width="20"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <div
-          x-data="{ open: false }"
-          @mouseover="open = true"
-          @mouseleave="open = false"
-          @click.outside="open = false"
-          :class="[open ? 'opacity-100' : 'opacity-80']"
-          class="w-full aspect-video relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
-        >
-          <img
-            class="w-[100%] max-w-full h-full rounded-lg"
-            src="/images/dianna-krykunova.png"
-            alt="team member"
-          />
-          <div
-            class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
-          >
-            <p class="font-medium text-center">Діанна Крикунова</p>
-            <div
-              class="flex flex-col gap-1"
-              x-show="open"
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="opacity-0"
-              x-transition:enter-end="opacity-100"
-              x-transition:leave="transition ase-out duration-300"
-              x-transition:leave-start="opacity-100"
-              x-transition:leave-end="opacity-0"
-            >
-              <ul>
-                <li class="text-center">Дизайн</li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Дизайн
+                </li>
               </ul>
               <div class="flex justify-center gap-2">
                 <a href="https://github.com/PuhLopuh" target="_blank"
@@ -495,27 +451,81 @@
           :class="[open ? 'opacity-100' : 'opacity-80']"
           class="w-full aspect-video relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
         >
-          <img
-            class="w-[100%] max-w-full h-full rounded-lg"
-            src="/images/halyna-stepanenko.png"
-            alt="team member"
-          />
           <div
-            class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            class="test w-[100%] bg-[url('/Olha-Zarichna.4c44d8de.jpg')] bg-[left_calc(0%)_top_calc(30%)] bg-cover bg-no-repeat max-w-full h-full rounded-lg"
+          ></div>
+
+          <div
+            class="flex flex-col md:p-2 pb-1 p-0 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:leave="transition ease-out duration-300"
+            x-cloak
           >
-            <p class="font-medium text-center">Галина Степаненко</p>
-            <div
-              class="flex flex-col gap-1"
-              x-show="open"
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="opacity-0"
-              x-transition:enter-end="opacity-100"
-              x-transition:leave="transition ase-out duration-300"
-              x-transition:leave-start="opacity-100"
-              x-transition:leave-end="opacity-0"
+            <p
+              class="font-medium text-center sm:text-base text-xs leading-none lg:leading-normal"
             >
+              Ольга Зарічна
+            </p>
+            <div class="flex flex-col gap-1">
               <ul>
-                <li class="text-center">Верстка</li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Верстка
+                </li>
+              </ul>
+              <div class="flex justify-center gap-2">
+                <a href="https://github.com/Olyazarichna" target="_blank"
+                  ><img
+                    class="opacity-50 hover:scale-105 ease-in 150ms"
+                    src="/images/github.svg"
+                    alt="github"
+                    width="20"
+                /></a>
+                <a href="http://linkedin.com/in/olya-zarichna" target="_blank"
+                  ><img
+                    class="opacity-50 hover:scale-105 ease-in 150ms"
+                    src="/images/linkedin.svg"
+                    alt="linkedin"
+                    width="20"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div
+          x-data="{ open: false }"
+          @mouseover="open = true"
+          @mouseleave="open = false"
+          @click.outside="open = false"
+          :class="[open ? 'opacity-100' : 'opacity-80']"
+          class="w-full aspect-video relative p-2 bg-[#9D7FAD] rounded hover:opacity-100 hover:cursor-pointer ease-in-out duration-300"
+        >
+          <div
+            class="w-[100%] bg-[url('/halyna-stepanenko.689e44b7.jpg')] bg-cover bg-no-repeat max-w-full h-full rounded-lg"
+          ></div>
+          <div
+            class="flex flex-col md:p-2 pb-1 p-0 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:leave="transition ease-out duration-300"
+            x-cloak
+          >
+            <p
+              class="font-medium text-center sm:text-base text-xs leading-none lg:leading-normal"
+            >
+              Галина Степаненко
+            </p>
+            <div class="flex flex-col gap-1">
+              <ul>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Верстка
+                </li>
               </ul>
               <div class="flex justify-center gap-2">
                 <a href="https://github.com/galinavikst" target="_blank"
@@ -554,21 +564,24 @@
             alt="team member"
           />
           <div
-            class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            class="flex flex-col lg:p-2 pb-1 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:leave="transition ease-out duration-300"
+            x-cloak
           >
-            <p class="font-medium text-center">Світлана Рудєва</p>
-            <div
-              class="flex flex-col gap-1"
-              x-show="open"
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="opacity-0"
-              x-transition:enter-end="opacity-100"
-              x-transition:leave="transition ase-out duration-300"
-              x-transition:leave-start="opacity-100"
-              x-transition:leave-end="opacity-0"
+            <p
+              class="font-medium text-center sm:text-base text-xs leading-none lg:leading-normal"
             >
+              Світлана Рудєва
+            </p>
+            <div class="flex flex-col gap-1">
               <ul>
-                <li class="text-center">Менеджер</li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Менеджер
+                </li>
               </ul>
               <div class="flex justify-center gap-2">
                 <a href="https://github.com/Switlo" target="_blank"
@@ -607,23 +620,34 @@
             alt="team member"
           />
           <div
-            class="flex flex-col gap-1 p-2 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            class="flex flex-col lg:p-2 pb-1 w-full absolute left-0 bottom-0 rounded-bottom-right rounded-br rounded-bl opacity-90 bg-purple-200 text-indigo-950"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:leave="transition ease-out duration-300"
+            x-cloak
           >
-            <p class="font-medium text-center">Олександра Колеснікова</p>
-            <div
-              class="flex flex-col gap-1"
-              x-show="open"
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="opacity-0"
-              x-transition:enter-end="opacity-100"
-              x-transition:leave="transition ase-out duration-300"
-              x-transition:leave-start="opacity-100"
-              x-transition:leave-end="opacity-0"
+            <p
+              class="font-medium text-center sm:text-base text-xs leading-none lg:leading-normal"
             >
+              Олександра Колеснікова
+            </p>
+            <div class="flex flex-col gap-1">
               <ul>
-                <li class="text-center">Tехнічний стек</li>
-                <li class="text-center">Канбан</li>
-                <li class="text-center">Документація</li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Tехнічний стек
+                </li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Канбан
+                </li>
+                <li
+                  class="text-center sm:text-base text-xs leading-none lg:leading-normal"
+                >
+                  Документація
+                </li>
               </ul>
               <div class="flex justify-center gap-2">
                 <a href="https://github.com/AleKoles" target="_blank"
