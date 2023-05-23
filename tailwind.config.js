@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
@@ -10,7 +11,11 @@ module.exports = {
       "btn-cl": "#FF66C4",
       "accent-cl": "#FF27AC",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "roboto-slab": ["Roboto Slab", "serif"],
+      },
+    },
   },
   plugins: [],
 };
