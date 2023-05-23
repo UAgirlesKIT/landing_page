@@ -1,15 +1,50 @@
-<header class="bg-purple-200">
-    <div>
-        <a class="company" href="/index.html" id="logo">
+<header class="bg-purple-200 px-10 py-16 w-screen mx-auto box-border">
+    <div class="flex justify-between items-center relative">
+        <a href="/index.html" id="logo" class="cursor-pointer">
             <img src="/images/logo.svg" alt="company logo" width="129" height="80" />
         </a>
+        <nav>
+            <ul class="absolute -bottom-10 left-0 z-10 flex md:static">
+                <li class="px-4 md:px-10">
+                    <a href="#about_us"
+                        class="text-sm font-medium hover:cursor-pointer relative group py-2  md:font-bold md:text-lg">
+                        Про нас
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-1 bg-pink-400 rounded-full transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+                <li class="px-4 md:px-10">
+                    <a href="#skills"
+                        class="text-sm font-medium cursor-pointer relative group py-2  md:font-bold md:text-lg">
+                        Що вміємо
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-1 bg-pink-400 rounded-full transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+                <li class="px-4 md:px-10 relative">
+                    <a href="#why_us"
+                        class="text-sm font-medium cursor-pointer relative group py-2  md:font-bold md:text-lg">
+                        Чому ми?
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-1 bg-pink-400 rounded-full transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button
+            class="px-2 font-medium rounded-full text-sm bg-pink-400 text-white block border-2 border-transparent hover:bg-white hover:text-pink-400 hover:border-2 hover:border-pink-400 cursor-[url(hand.cur),_pointer] md:px-8 py-1 md:font-bold md:text-lg">
+            Зв'язатися
+        </button>
+
     </div>
-    <nav>
-        <ul class="flex">
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Що вміємо</a></li>
-            <li><a href="">Чому ми?</a></li>
-        </ul>
-    </nav>
-    <button>Зв'язатися</button>
+    <section class="flex items-center justify-between mt-6 md:mt-0 relative">
+        <h1
+            class="absolute text-sm font-medium z-10 text-lg bg-gradient-to-r from-purple-200 to-pink-400 rounded-r-lg w-3/4 md:static md:w-2/5 md:text-xl md:bg-none lg:w-4/12">
+            Привіт, ми українські дівчата, котрі знайшли себе у front-end розробці та
+            прагнуть у ній розвиватись.
+        </h1>
+        <div class="absolete  -rotate-12 bg-white rounded-[50%] md:w-[728px] md:h-[440px] md:static">
+            <img class="rotate-12" src="/images/herosection.png" alt="Girls" />
+        </div>
+    </section>
 </header>
