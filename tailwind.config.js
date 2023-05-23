@@ -1,20 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}", './index.html'],
-  theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'white': '#ffffff',
-      'main': '#F1DCFC',
-      'btn-cl': '#FF66C4',
-      'accent-cl': "#FF27AC",
-    },
-    extend: {},
+import defaultTheme from "tailwindcss/defaultTheme";
+
+export const content = ["./src/**/*.{html,js}", "./index.html"];
+
+export const theme = {
+  colors: {
+    transparent: "transparent",
+    current: "currentColor",
+    white: "#ffffff",
+    main: "#F1DCFC",
+    "btn-cl": "#FF66C4",
+    "accent-cl": "#FF27AC",
   },
-  plugins: [],
-}
-
-
-
-
+  extend: {
+    fontFamily: {
+      "roboto-slab": ["Roboto Slab", ...defaultTheme.fontFamily.serif],
+    },
+  },
+};
+export const plugins = [];
