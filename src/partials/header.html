@@ -1,50 +1,115 @@
-<header class="bg-purple-200 px-10 py-16 w-screen mx-auto box-border">
-    <div class="flex justify-between items-center relative">
-        <a href="/index.html" id="logo" class="cursor-pointer">
-            <img src="/images/logo.svg" alt="company logo" width="129" height="80" />
+<header class="bg-purple-200 font-['roboto-slab'] bg-purple-200">
+  <div
+    class="flex justify-between md:items-center items-start mx-auto max-w-screen-xl box-border p-4 relative"
+  >
+    <div class="md:flex gap-6 hidden">
+      <a href="/index.html" id="logo" class="cursor-pointer">
+        <img
+          src="/images/logo.svg"
+          alt="company logo"
+          width="129"
+          height="80"
+        />
+      </a>
+      <nav class="flex items-center gap-6">
+        <a
+          href="#about_us"
+          class="text-sm font-medium hover:cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Про нас
         </a>
-        <nav>
-            <ul class="absolute -bottom-10 left-0 z-10 flex md:static">
-                <li class="px-4 md:px-10">
-                    <a href="#about_us"
-                        class="text-sm font-medium hover:cursor-pointer relative group py-2  md:font-bold md:text-lg">
-                        Про нас
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-1 bg-pink-400 rounded-full transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-                <li class="px-4 md:px-10">
-                    <a href="#skills"
-                        class="text-sm font-medium cursor-pointer relative group py-2  md:font-bold md:text-lg">
-                        Що вміємо
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-1 bg-pink-400 rounded-full transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-                <li class="px-4 md:px-10 relative">
-                    <a href="#why_us"
-                        class="text-sm font-medium cursor-pointer relative group py-2  md:font-bold md:text-lg">
-                        Чому ми?
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-1 bg-pink-400 rounded-full transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <button
-            class="px-2 font-medium rounded-full text-sm bg-pink-400 text-white block border-2 border-transparent hover:bg-white hover:text-pink-400 hover:border-2 hover:border-pink-400 cursor-[url(hand.cur),_pointer] md:px-8 py-1 md:font-bold md:text-lg">
-            Зв'язатися
-        </button>
+        <a
+          href="#skills"
+          class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Що вміємо
+        </a>
 
+        <a
+          href="#why_us"
+          class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Чому ми?
+        </a>
+        <a
+          href="#team"
+          class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Команда
+        </a>
+      </nav>
     </div>
-    <section class="flex items-center justify-between mt-6 md:mt-0 relative">
-        <h1
-            class="absolute text-sm font-medium z-10 text-lg bg-gradient-to-r from-purple-200 to-pink-400 rounded-r-lg w-3/4 md:static md:w-2/5 md:text-xl md:bg-none lg:w-4/12">
-            Привіт, ми українські дівчата, котрі знайшли себе у front-end розробці та
-            прагнуть у ній розвиватись.
-        </h1>
-        <div class="absolete  -rotate-12 bg-white rounded-[50%] md:w-[728px] md:h-[440px] md:static">
-            <img class="rotate-12" src="/images/herosection.png" alt="Girls" />
-        </div>
-    </section>
+
+    <div class="flex flex-col gap-6 md:hidden" x-data="{ expanded: false }">
+      <svg
+        fill="none"
+        width="50"
+        stroke="currentColor"
+        stroke-width="1"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        class="self-start"
+        @click="expanded = ! expanded"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        ></path>
+      </svg>
+      <nav class="flex flex-col items-start gap-6" x-show="expanded" x-collapse>
+        <a
+          href="#about_us"
+          class="text-sm font-medium hover:cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Про нас
+        </a>
+        <a
+          href="#skills"
+          class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Що вміємо
+        </a>
+
+        <a
+          href="#why_us"
+          class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Чому ми?
+        </a>
+        <a
+          href="#team"
+          class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
+        >
+          Команда
+        </a>
+      </nav>
+    </div>
+    <button
+      class="rounded-full bg-pink-400 lg:text-3xl text-2xl text-white block border-2 border-transparent hover:bg-white hover:text-pink-400 hover:border-2 hover:border-pink-400 cursor-[url(hand.cur),_pointer] px-8 py-1 font-bold"
+    >
+      Зв'язатися
+    </button>
+  </div>
 </header>
+<!-- ............ -->
+<!-- hero section -->
+<section class="bg-purple-200 font-['roboto-slab'] bg-purple-200">
+  <div
+    class="bg-[url('/hero-bg-svg.399ccfa0.svg')] bg-no-repeat md:bg-[95%] bg-[length:90%] sm:bg-[left_calc(50%)_top_calc(25%)] bg-[left_calc(50%)_top_calc(15%)] md:bg-[length:55%] sm:px-10 px-4 sm:py-16 py-10 mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center"
+  >
+    <h1
+      class="md:w-[40%] font-bold md:text-4xl text-center md:text-left text-3xl"
+    >
+      Привіт, ми українські дівчата, котрі знайшли себе у front-end розробці та
+      прагнуть у ній розвиватись.
+    </h1>
+
+    <img
+      class="ml-auto md:w-[59%] w-[100%]"
+      src="/images/herosection.png"
+      alt="Girls"
+    />
+  </div>
+</section>
