@@ -1,9 +1,9 @@
 <header
-  class="bg-purple-200 font-['roboto-slab'] bg-purple-200"
+  class="shadow-sm bg-purple-200 font-['roboto-slab'] bg-purple-200 w-full fixed top-0 z-50"
   x-data="{ expanded: false, open: false }"
 >
   <div
-    class="flex justify-between items-center mx-auto max-w-screen-xl box-border sm:p-4 p-2 relative"
+    class="flex justify-between items-center mx-auto max-w-screen-xl box-border sm:p-4 p-2"
   >
     <div class="flex gap-6">
       <a href="/index.html" id="logo" class="cursor-pointer">
@@ -43,13 +43,14 @@
       Зв'язатися
     </button>
     <!-- ........
-      hamburger................. -->
+      hamburger 
+    -->
     <button
       class="block md:hidden text-indigo-950 w-10 h-10 relative focus:outline-none"
     >
       <div
         class="block w-8 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        @click="open = !open, expanded = ! expanded"
+        @click="expanded = ! expanded, open = expanded"
       >
         <span
           aria-hidden="true"
@@ -70,11 +71,13 @@
     </button>
     <!-- ...... -->
   </div>
-
+  <!-- .......
+  hidden nav
+ -->
   <nav
     class="absolute backdrop-blur w-full flex flex-col items-start gap-6 sm:p-6 p-4"
     x-show="expanded"
-    @click.outside="expanded = false"
+    @click.outside="expanded = false, open = false"
     x-collapse
   >
     <a
@@ -103,14 +106,13 @@
       Команда
     </a>
   </nav>
-
-  <div class="relative py-3 sm:max-w-xl mx-auto">
-    <nav x-data="{ open: false }"></nav>
-  </div>
+  <!-- ...... -->
 </header>
 <!-- ............ -->
 <!-- hero section -->
-<section class="bg-purple-200 font-['roboto-slab'] bg-purple-200">
+<section
+  class="flex items-center h-screen bg-purple-200 font-['roboto-slab'] bg-purple-200"
+>
   <div
     class="bg-[url('/hero-bg-svg.399ccfa0.svg')] bg-no-repeat md:bg-[95%] bg-[length:90%] sm:bg-[left_calc(50%)_top_calc(25%)] bg-[left_calc(50%)_top_calc(15%)] md:bg-[length:55%] sm:px-10 px-4 sm:py-16 py-10 mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center"
   >
