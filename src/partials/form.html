@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
     <title>Document</title>
     <link rel="stylesheet" href="./src/input.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,23 +16,25 @@
 </head>
 
 <body>
-    <div class="flex justify-center items-center ">
+    <div class="flex justify-center items-center">
         <form class="flex flex-col m-40 max-w-sm" action="https://getform.io/f/c4b255f7-0ba1-4528-8151-aaef6f265649"
             method="post">
             <label class="text-indigo-950" for="Name">Як до вас звертатись?*</label>
-            <input placeholder="Ім'я, прізвище" type="text" name="Name"
-                class="p-2 rounded-3xl border-4 border-purple-200 border-solid" required />
+            <input placeholder="Ім'я, прізвище" pattern="^[A-Za-zА-ЩЬЮЯҐЄІЇа-щьюяґєії]+$" type="text" name="Name"
+                id="Name" minlength="3" class="p-2 rounded-3xl border-4 border-purple-200 border-solid" required />
 
             <label class="text-indigo-950" for="Company">Яку компанію представляєте?</label>
             <input placeholder="Назва" type="text" name="Company" spellcheck="true"
                 class=" p-2 rounded-3xl border-4 border-purple-200 border-solid" />
 
             <label for="email">Електронна пошта*</label>
-            <input type="text" placeholder="example@example.com" name="email" spellcheck="true"
-                class="p-2 rounded-3xl border-4 border-purple-200 border-solid required:invalid:" required />
+            <input type="email" placeholder="example@example.com" name="email" id="email"
+                class="p-2 rounded-3xl border-4 border-purple-200 border-solid" required />
+
 
             <label for="phone-number">Телефон</label>
-            <input type="text" placeholder="+38(000) 000-00-00" name="phone-number" spellcheck="true"
+            <input type="tel" pattern="^[\d+\-\s]+$" id="phone-number" minlength="9" maxlength="20"
+                placeholder="+38(000) 000-00-00" name="phone-number"
                 class="p-2 rounded-3xl border-4 border-purple-200 border-solid" />
 
             <label for="services">Яка послуга вас цікавить?</label>
@@ -68,7 +71,7 @@
                 <label class="inline-flex items-center mt-1">
                     <input type="hidden" name="seo-adaptation" value="no">
                     <input type="checkbox" name="seo-adaptation" value="yes"
-                        class="form-checkbox h-4 w-4  transition duration-150 ease-in-out">
+                        class="form-checkbox h-4 w-4 transition duration-150 ease-in-out">
                     <label for="seo-adaptation"
                         class="ml-2 text-gray-700 transition duration-150 ease-in-out">Оптимізація сайту під вимоги
                         SEO</label>
