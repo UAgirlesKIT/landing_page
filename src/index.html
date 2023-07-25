@@ -20,19 +20,24 @@
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <script type="module" src="./index.js"></script>
     <style>
-      .test {
+      /* .test {
         background: url("./images/Ellipse-skills-top.svg");
-      }
+      } */
     </style>
   </head>
-  <body>
+  <body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
     <include src="./partials/header.html"></include>
     <main>
+      <div
+        class="overlay w-full h-full fixed top-0 left-0 bg-[#000] opacity-50 z-40"
+        x-show="isModalOpen"
+        x-cloak
+      ></div>
+      <include src="./partials/contact_form.html"></include>
       <include src="./partials/about_us.html"></include>
       <include src="./partials/our_history.html"></include>
       <include src="./partials/skills.html"></include>
       <include src="./partials/why_us.html"></include>
-      <include src="./partials/contact_form.html"></include>
       <include src="./partials/our_team.html"></include>
       <!-- contact form (I suggest using https://getform.io/, it has one free form per email) -->
     </main>
