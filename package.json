@@ -7,7 +7,7 @@
   "scripts": {
     "watch": "parcel index.html --open --port 3000",
     "dev": "parcel src/*.html --out-dir dev",
-    "build": "parcel build src/*.html --public-url /landing_page/ --no-cache",
+    "build": "parcel build src/*.html --out-dir build --no-cache",
     "start": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
     "deploy": "gh-pages -d dist"
   },
