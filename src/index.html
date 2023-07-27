@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="/styles.css" rel="stylesheet" />
-  <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script> -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
   <title>UA Girls_Keep in Tech</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +19,7 @@
 <body>
   <include src="./partials/header.html"></include>
   <main>
+    <div class="overlay w-full h-full fixed top-0 left-0 bg-[#000] opacity-50 z-40" x-show="isModalOpen" x-cloak></div>
     <include src="./partials/about_us.html"></include>
     <include src="./partials/our_history.html"></include>
     <include src="./partials/skills.html"></include>
