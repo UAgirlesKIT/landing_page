@@ -6,9 +6,9 @@
   "homepage": "https://UAgirlsKIT.github.io/landing_page/",
   "scripts": {
     "watch": "parcel index.html --open --port 3000",
-    "dev": "parcel src/*.html",
+    "dev": "parcel src/*.html --out-dir dev",
     "build": "parcel build src/*.html --public-url /landing_page/ --no-cache",
-    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "start": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
