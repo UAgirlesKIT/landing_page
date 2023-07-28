@@ -7,168 +7,171 @@
   x-cloak
   x-transition
 >
-  <form
-    class="flex flex-col gap-4 bg-white p-2 sm:p-10 sm:pt-28 pt-24 w-[300px] sm:w-[550px] mx-auto h-[100vh] overflow-y-auto fixed top-0"
-    action="https://getform.io/f/c4b255f7-0ba1-4528-8151-aaef6f265649"
-    method="post"
+  <div
+    class="flex flex-col gap-5 bg-white p-2 sm:p-10 sm:pt-28 pt-24 w-[300px] sm:w-[550px] mx-auto h-full fixed top-0 overflow-y-auto"
   >
-    <div class="flex flex-col">
-      <label class="text-indigo-950 font-bold" for="Name"
-        >Як до вас звертатись?*</label
-      >
-      <input
-        placeholder="Ім'я, прізвище"
-        type="text"
-        name="Name"
-        class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
-        required
-      />
-    </div>
-
-    <div class="flex flex-col">
-      <label class="text-indigo-950 font-bold" for="Company"
-        >Яку компанію представляєте?</label
-      >
-      <input
-        placeholder="Назва"
-        type="text"
-        name="Company"
-        spellcheck="true"
-        class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
-      />
-    </div>
-
-    <div class="flex flex-col">
-      <label class="text-indigo-950 font-bold" for="email"
-        >Електронна пошта*</label
-      >
-      <input
-        type="text"
-        placeholder="example@example.com"
-        name="email"
-        spellcheck="true"
-        class="p-2 rounded-3xl border-4 border-purple-200 border-solid required:invalid:"
-        required
-      />
-    </div>
-
-    <div class="flex flex-col">
-      <label class="text-indigo-950 font-bold" for="phone-number"
-        >Телефон</label
-      >
-      <input
-        type="text"
-        placeholder="+38(000) 000-00-00"
-        name="phone-number"
-        spellcheck="true"
-        class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
-      />
-    </div>
-
-    <div class="flex flex-col">
-      <label class="text-indigo-950 font-bold" for="services"
-        >Яка послуга вас цікавить?</label
-      >
+    <form
+      class="flex flex-col gap-4"
+      action="https://getform.io/f/c4b255f7-0ba1-4528-8151-aaef6f265649"
+      method="post"
+    >
       <div class="flex flex-col">
-        <label class="inline-flex items-center mt-1">
-          <input type="hidden" name="layout-coding" value="no" />
-          <input
-            type="checkbox"
-            name="layout-coding"
-            value="yes"
-            class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
-          />
-          <label
-            for="layout-coding"
-            class="ml-2 text-gray-700 transition duration-150 ease-in-out"
-            >Верстка лендінгу/сайту</label
-          >
-        </label>
-        <label class="inline-flex items-center mt-1">
-          <input type="hidden" name="mail-coding" value="no" />
-          <input
-            type="checkbox"
-            name="mail-coding"
-            value="yes"
-            class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
-          />
-          <label
-            for="mail-coding"
-            class="ml-2 text-gray-700 transition duration-150 ease-in-out"
-            >Верстка імейлів</label
-          >
-        </label>
-        <label class="inline-flex items-center mt-1">
-          <input type="hidden" name="front-end-development" value="no" />
-          <input
-            type="checkbox"
-            name="front-end-development"
-            value="yes"
-            class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
-          />
-          <label
-            for="front-end-development"
-            class="ml-2 text-gray-700 transition duration-150 ease-in-out"
-            >Front-end розробка сайту</label
-          >
-        </label>
-        <label class="inline-flex items-center mt-1">
-          <input type="hidden" name="adaptive-coding" value="no" />
-          <input
-            type="checkbox"
-            name="adaptive-coding"
-            value="yes"
-            class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
-          />
-          <label
-            for="adaptive-coding"
-            class="ml-2 text-gray-700 transition duration-150 ease-in-out"
-            >Адаптація верстки під різні екрани</label
-          >
-        </label>
-        <label class="inline-flex items-center mt-1">
-          <input type="hidden" name="seo-adaptation" value="no" />
-          <input
-            type="checkbox"
-            name="seo-adaptation"
-            value="yes"
-            class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
-          />
-          <label
-            for="seo-adaptation"
-            class="ml-2 text-gray-700 transition duration-150 ease-in-out"
-            >Оптимізація сайту під вимоги SEO</label
-          >
-        </label>
+        <label class="text-indigo-950 font-bold" for="Name"
+          >Як до вас звертатись?*</label
+        >
+        <input
+          placeholder="Ім'я, прізвище"
+          type="text"
+          name="Name"
+          class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
+          required
+        />
       </div>
-    </div>
+      <div class="flex flex-col">
+        <label class="text-indigo-950 font-bold" for="Company"
+          >Яку компанію представляєте?</label
+        >
+        <input
+          placeholder="Назва"
+          type="text"
+          name="Company"
+          spellcheck="true"
+          class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
+        />
+      </div>
 
-    <div class="flex flex-col">
-      <label class="text-indigo-950 font-bold" for="description"
-        >Додаткова інформація</label
-      >
-      <textarea
-        placeholder="Опишіть важливі моменти вашого веб-проєкту"
-        name="description"
-        rows="4"
-        cols="50"
-        class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
-      ></textarea>
-    </div>
-    <div class="flex justify-center flex-col gap-6">
-      <button
-        type="submit"
-        class="p-3 border-2 border-pink-400 rounded-full lleading-tight font-bold text-2xl sm:text-3xl w-full sm:w-72 bg-pink-400 text-white block mx-auto hover:bg-white hover:text-pink-400 ease-in-out duration-200"
-      >
-        Відправити
-      </button>
-      <button
-        aria-label="Close"
-        x-on:click="isModalOpen=false"
-        class="p-2 border-[0.5px] border-indigo-950 rounded-full w-10 block mx-auto hover:bg-pink-400 hover:text-white hover:border-pink-400 ease-in-out duration-200"
-      >
-        ✖
-      </button>
-    </div>
-  </form>
+      <div class="flex flex-col">
+        <label class="text-indigo-950 font-bold" for="email"
+          >Електронна пошта*</label
+        >
+        <input
+          type="text"
+          placeholder="example@example.com"
+          name="email"
+          spellcheck="true"
+          class="p-2 rounded-3xl border-4 border-purple-200 border-solid required:invalid:"
+          required
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-indigo-950 font-bold" for="phone-number"
+          >Телефон</label
+        >
+        <input
+          type="text"
+          placeholder="+38(000) 000-00-00"
+          name="phone-number"
+          spellcheck="true"
+          class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-indigo-950 font-bold" for="services"
+          >Яка послуга вас цікавить?</label
+        >
+        <div class="flex flex-col">
+          <label class="inline-flex items-center mt-1">
+            <input type="hidden" name="layout-coding" value="no" />
+            <input
+              type="checkbox"
+              name="layout-coding"
+              value="yes"
+              class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
+            />
+            <label
+              for="layout-coding"
+              class="ml-2 text-gray-700 transition duration-150 ease-in-out"
+              >Верстка лендінгу/сайту</label
+            >
+          </label>
+          <label class="inline-flex items-center mt-1">
+            <input type="hidden" name="mail-coding" value="no" />
+            <input
+              type="checkbox"
+              name="mail-coding"
+              value="yes"
+              class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
+            />
+            <label
+              for="mail-coding"
+              class="ml-2 text-gray-700 transition duration-150 ease-in-out"
+              >Верстка імейлів</label
+            >
+          </label>
+          <label class="inline-flex items-center mt-1">
+            <input type="hidden" name="front-end-development" value="no" />
+            <input
+              type="checkbox"
+              name="front-end-development"
+              value="yes"
+              class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
+            />
+            <label
+              for="front-end-development"
+              class="ml-2 text-gray-700 transition duration-150 ease-in-out"
+              >Front-end розробка сайту</label
+            >
+          </label>
+          <label class="inline-flex items-center mt-1">
+            <input type="hidden" name="adaptive-coding" value="no" />
+            <input
+              type="checkbox"
+              name="adaptive-coding"
+              value="yes"
+              class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
+            />
+            <label
+              for="adaptive-coding"
+              class="ml-2 text-gray-700 transition duration-150 ease-in-out"
+              >Адаптація верстки під різні екрани</label
+            >
+          </label>
+          <label class="inline-flex items-center mt-1">
+            <input type="hidden" name="seo-adaptation" value="no" />
+            <input
+              type="checkbox"
+              name="seo-adaptation"
+              value="yes"
+              class="form-checkbox h-4 w-4 transition duration-150 ease-in-out"
+            />
+            <label
+              for="seo-adaptation"
+              class="ml-2 text-gray-700 transition duration-150 ease-in-out"
+              >Оптимізація сайту під вимоги SEO</label
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-indigo-950 font-bold" for="description"
+          >Додаткова інформація</label
+        >
+        <textarea
+          placeholder="Опишіть важливі моменти вашого веб-проєкту"
+          name="description"
+          rows="4"
+          cols="50"
+          class="p-2 rounded-3xl border-4 border-purple-200 border-solid"
+        ></textarea>
+      </div>
+      <div class="flex justify-center flex-col gap-6">
+        <button
+          type="submit"
+          class="p-3 border-2 border-pink-400 rounded-full lleading-tight font-bold text-2xl sm:text-3xl w-full sm:w-72 bg-pink-400 text-white block mx-auto hover:bg-white hover:text-pink-400 ease-in-out duration-200"
+        >
+          Відправити
+        </button>
+      </div>
+    </form>
+    <button
+      aria-label="Close"
+      x-on:click="isModalOpen=false"
+      class="p-2 border-[0.5px] border-indigo-950 rounded-full w-10 block mx-auto hover:bg-pink-400 hover:text-white hover:border-pink-400 ease-in-out duration-200"
+    >
+      ✖
+    </button>
+  </div>
 </div>
