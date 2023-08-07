@@ -2,7 +2,9 @@
   id="about_us"
   class="font-['roboto-slab'] box-border max-w-screen-xl mx-auto sm:px-10 px-4 py-16 flex items-center justify-center flex-col"
 >
-  <h2 class="font-bold text-3xl text-center">Про нас</h2>
+  <h2 class="font-bold text-3xl text-center" x-text="$t('about.title')">
+    Про нас
+  </h2>
   <div class="flex flex-col lg:gap-4 items-center lg:flex-row">
     <div class="relative">
       <img class="" src="/images/about-us-1.png" alt="ua girls" />
@@ -11,17 +13,20 @@
       ></div>
     </div>
     <div class="md:py-4 font-medium text-center sm:text-left lg:w-[60%]">
-      <p class="pb-3 text-2xl lg:leading-9 leading-7">
+      <p class="pb-3 text-2xl lg:leading-9 leading-7" x-text="$t('about.p1')">
         Ми пройшли курси міжнародної IT-школи SheCodes. Хтось вчиться у ній
-        досі. А дехто вже має комерційний досвід роботи.
+        досі. А дехто вже встиг закінчити кілька інших навчань і має комерційний
+        досвід роботи.
       </p>
-      <p class="pb-3 text-2xl lg:leading-9 leading-7">
-        У серпні 2022 року ми створили спільноту, щоб підтримати одна одну та допомагати у навчанні. Зараз у ній до 900 розумних,
+      <p class="pb-3 text-2xl lg:leading-9 leading-7" x-text="$t('about.p2')">
+        У серпні 2022 року ми створили спільноту «UA girls KEEP IN TECH». Мета —
+        допомагати й підтримувати одна одну. Зараз у ній до 900 розумних,
         сміливих й рішучих спеціалістів різної кваліфікації та напрямків.
       </p>
-      <p class="pb-3 text-2xl lg:leading-9 leading-7">
+      <p class="pb-3 text-2xl lg:leading-9 leading-7" x-text="$t('about.p3')">
         Ми ті, хто відчув пекельну конкуренцію українського ІТ-ринку. Хто знає,
-        як це бути однією із кількох сотень претенденток на місце «трейні». Як корпіти ночами над тестовим завданням, яке ледь під силу «мідлу».
+        як це бути однією із кількох сотень претендентів на місце «трейні» та
+        ночами корпіти над тестовим завданням, яке ледь під силу «мідлу».
       </p>
       <blockquote class="text-pink-400 mb-6 text-2xl lg:leading-9 leading-7">
         Ми не здаємося! If you can't beat 'em, join 'em.
@@ -31,6 +36,7 @@
   <button
     x-on:click="isModalOpen=true"
     class="p-3 border-2 border-pink-400 rounded-full lleading-tight font-bold text-2xl sm:text-3xl w-full sm:w-72 bg-pink-400 text-white block mx-auto hover:bg-white hover:text-pink-400 ease-in-out duration-200"
+    x-text="$t('btns.about')"
   >
     Напишіть нам
   </button>

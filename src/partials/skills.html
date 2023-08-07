@@ -8,33 +8,49 @@
   <div
     class="md:block hidden absolute -z-10 top-0 left-0 w-full h-full bg-[url('/Ellipse-skills-top.8e37c664.svg')] bg-no-repeat sm:bg-[left_calc(0%)_top_calc(7%)] bg-[left_calc(0%)_top_calc(7%)] lg:bg-[length:25%] md:bg-[length:37%]"
   ></div>
-  <h2 class="font-bold text-center md:text-left text-3xl">Що ми вміємо?</h2>
+  <h2
+    class="font-bold text-center md:text-left text-3xl"
+    x-text="$t('skills.title')"
+  >
+    `Що ми вміємо?
+  </h2>
   <div class="flex md:flex-row flex-col gap-4 py-7 pb-12">
     <div class="lg:w-[50%] md:w-[70%] bg-purple-200 sm:p-6 p-4 rounded-[50px]">
-      <h3 class="font-bold text-2xl text-center">Послуги</h3>
+      <h3
+        class="font-bold text-2xl text-center"
+        x-text="$t('skills.services.title')"
+      >
+        Послуги
+      </h3>
       <ul
         class="list-disc sm:pl-8 pl-6 font-medium text-2xl lg:leading-9 leading-7"
       >
-        <li>верстка унікального резюме;</li>
-        <li>верстка екслюзивного сайту-візитки;</li>
-        <li>верстка імейлів;</li>
-        <li>створення портфоліо;</li>
-        <li>кодинг лендінгів та сайтів;</li>
-        <li>
-          адаптація сайтів під різні екрани (<span lang="en">Responsive</span>
-          верстка);
+        <li x-text="$t('skills.services.li1')">верстка унікального резюме</li>
+        <li x-text="$t('skills.services.li2')">
+          верстка екслюзивного сайту-візитки
         </li>
-        <li>програмування поведінкових алгоритмів користувачів;</li>
-        <li>
+        <li x-text="$t('skills.services.li3')">верстка імейлів</li>
+        <li x-text="$t('skills.services.li4')">створення портфоліо</li>
+        <li x-text="$t('skills.services.li5')">кодинг лендінгів та сайтів</li>
+        <li x-text="$t('skills.services.li6')">
+          адаптація сайтів під різні екрани (Responsive верстка)
+        </li>
+        <li x-text="$t('skills.services.li7')">
+          програмування поведінкових алгоритмів користувачів
+        </li>
+        <li x-text="$t('skills.services.li8')">
           оптимізація «рукописних» сайтів під вимоги SEO-спеціалістів
-          (заголовки, <span lang="en">titles, alts, descriptions</span>)
+          (заголовки, titles, alts, descriptions)
         </li>
       </ul>
     </div>
     <div class="md:w-[50%] flex flex-col gap-7">
       <div class="bg-purple-200 sm:p-6 p-4 rounded-[50px]">
-        <h3 class="font-bold text-2xl text-center">
-          Наш <span lang="en">Tech Stack</span>
+        <h3
+          class="font-bold text-2xl text-center"
+          x-text="$t('skills.techTitle')"
+        >
+          Наш Tech Stack
         </h3>
         <ul
           class="list-disc sm:pl-8 pl-6 font-medium text-2xl lg:leading-9 leading-7"
@@ -43,14 +59,14 @@
           <li lang="en">CSS / Sass</li>
           <li lang="en">Bootstrap / Tailwind</li>
           <li lang="en">JavaScript / Typescript</li>
-          <li lang="en">React JS / Vue / Alpine.js / GSAP</li>
+          <li lang="en">React JS / Vue / Alpine.js / GSAP / MUI</li>
         </ul>
       </div>
       <p
         class="font-medium text-2xl md:p-4 p-0 lg:w-[50%] md:w-full text-center text-[#FF27AC]"
+        x-text="$t('skills.p')"
       >
-        Немає нічого, що не знають <span lang="en">Google</span> чи
-        <span lang="en">ChatGPT :)</span>
+        Немає нічого, що не знають Google чи ChatGPT :)
       </p>
     </div>
   </div>
@@ -62,7 +78,8 @@
   <button
     x-on:click="isModalOpen=true"
     class="py-3 px-8 rounded-full w-full sm:w-auto border-2 border-pink-400 lleading-tight font-bold text-2xl sm:text-3xl bg-pink-400 text-white block mx-auto hover:bg-white hover:text-pink-400 ease-in-out duration-200"
+    x-text="$t('btns.skills')"
   >
-    Зробити замовлення
+    Зробити замoвлення
   </button>
 </section>

@@ -29,6 +29,9 @@
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.12.2",
+    "alpinejs": "^3.12.3",
+    "alpinejs-i18n": "^2.4.0",
+    "i18next": "^23.4.2",
     "posthtml-img-autosize": "^0.1.6"
   }
 }

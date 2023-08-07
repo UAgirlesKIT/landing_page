@@ -12,7 +12,9 @@
         class="bg-purple-200 w-28 h-12 rounded-[50%] -z-[1] -rotate-[30deg]"
       ></div>
     </div>
-    <h2 class="font-bold text-3xl text-center">Команда</h2>
+    <h2 class="font-bold text-3xl text-center" x-text="$t('team.title')">
+      Команда
+    </h2>
     <div class="pt-12 pb-9 columns-2 lg:columns-4 md:columns-3">
       <div class="mb-4 break-inside-avoid">
         <div
@@ -33,7 +35,10 @@
             x-transition:leave="transition ease-out duration-300"
             x-cloak
           >
-            <p class="font-bold text-center sm:text-base text-xs">
+            <p
+              class="font-bold text-center sm:text-base text-xs"
+              x-text="$t('team.honcharovaA')"
+            >
               Алла Гончарова
             </p>
             <div class="flex flex-col gap-1">
@@ -85,7 +90,10 @@
             x-transition:leave="transition ease-out duration-300"
             x-cloak
           >
-            <p class="font-bold text-center sm:text-base text-xs">
+            <p
+              class="font-bold text-center sm:text-base text-xs"
+              x-text="$t('team.krykinovaD')"
+            >
               Діанна Крикунова
             </p>
             <div class="flex flex-col gap-1">
@@ -138,7 +146,10 @@
             x-transition:leave="transition ease-out duration-300"
             x-cloak
           >
-            <p class="font-bold text-center sm:text-base text-xs">
+            <p
+              class="font-bold text-center sm:text-base text-xs"
+              x-text="$t('team.rudyevaS')"
+            >
               Світлана Рудєва
             </p>
             <div class="flex flex-col gap-1">
@@ -195,7 +206,10 @@
             x-transition:leave="transition ease-out duration-300"
             x-cloak
           >
-            <p class="font-bold text-center sm:text-base text-xs">
+            <p
+              class="font-bold text-center sm:text-base text-xs"
+              x-text="$t('team.stepanenkoH')"
+            >
               Галина Степаненко
             </p>
             <div class="flex flex-col gap-1">
@@ -252,7 +266,10 @@
             x-transition:leave="transition ease-out duration-300"
             x-cloak
           >
-            <p class="font-bold text-center sm:text-base text-xs">
+            <p
+              class="font-bold text-center sm:text-base text-xs"
+              x-text="$t('team.zarichnaO')"
+            >
               Ольга Зарічна
             </p>
             <div class="flex flex-col gap-1">
@@ -307,7 +324,10 @@
             x-transition:leave="transition ease-out duration-300"
             x-cloak
           >
-            <p class="font-bold text-center sm:text-base text-xs">
+            <p
+              class="font-bold text-center sm:text-base text-xs"
+              x-text="$t('team.kolesnikovaO')"
+            >
               Олександра Колеснікова
             </p>
             <div class="flex flex-col gap-1">
@@ -354,6 +374,7 @@
     <button
       x-on:click="isModalOpen=true"
       class="py-3 px-8 rounded-full w-full sm:w-auto border-2 border-pink-400 lleading-tight font-bold text-2xl sm:text-3xl bg-pink-400 text-white block mx-auto hover:bg-white hover:text-pink-400 ease-in-out duration-200"
+      x-text="$t('btns.team')"
     >
       Попрацюємо разом?
     </button>

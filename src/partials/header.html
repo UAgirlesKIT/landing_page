@@ -13,27 +13,27 @@
         <a
           href="#about_us"
           class="text-sm font-medium hover:cursor-pointer relative group md:font-bold md:text-lg"
-        >
-          Про нас
+          x-text="$t('nav.about')"
+          >Про нас
         </a>
         <a
           href="#skills"
           class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
-        >
-          Що вміємо
+          x-text="$t('nav.services')"
+          >Що вміємо
         </a>
 
         <a
           href="#why_us"
           class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
-        >
-          Чому ми?
+          x-text="$t('nav.whyUs')"
+          >Чому ми
         </a>
         <a
           href="#team"
           class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
-        >
-          Команда
+          x-text="$t('nav.team')"
+          >Команда
         </a>
       </nav>
     </div>
@@ -41,9 +41,11 @@
     <button
       x-on:click="isModalOpen = true"
       class="self-center rounded-full bg-pink-400 lg:text-3xl text-2xl text-white block border-2 border-transparent hover:bg-white hover:text-pink-400 hover:border-2 hover:border-pink-400 cursor-[url(hand.cur),_pointer] px-8 py-1 font-bold"
+      x-text="$t('btns.header')"
     >
-      Зв'язатися
+      Зв'язатись
     </button>
+
     <!-- ........
       hamburger 
     -->
@@ -86,29 +88,29 @@
       href="#about_us"
       class="text-sm font-medium hover:cursor-pointer relative group md:font-bold md:text-lg"
       @click="expanded = false, open = false"
-    >
-      Про нас
+      x-text="$t('nav.about')"
+      >Про нас
     </a>
     <a
       href="#skills"
       class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
       @click="expanded = false, open = false"
-    >
-      Що вміємо
+      x-text="$t('nav.services')"
+      >Що вміємо
     </a>
     <a
       href="#why_us"
       class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
       @click="expanded = false, open = false"
-    >
-      Чому ми?
+      x-text="$t('nav.whyUs')"
+      >Чому ми
     </a>
     <a
       href="#team"
       class="text-sm font-medium cursor-pointer relative group md:font-bold md:text-lg"
       @click="expanded = false, open = false"
-    >
-      Команда
+      x-text="$t('nav.team')"
+      >Команда
     </a>
   </nav>
   <!-- ...... -->
@@ -119,13 +121,14 @@
   class="flex items-center h-screen min-h-[600px] bg-purple-200 font-['roboto-slab'] bg-purple-200"
 >
   <div
-    class="bg-[url('/hero-bg-svg.399ccfa0.svg')] bg-no-repeat md:bg-[95%] bg-[length:90%] sm:bg-[left_calc(50%)_top_calc(25%)] bg-[left_calc(50%)_top_calc(15%)] md:bg-[length:55%] sm:px-10 px-4 sm:py-16 py-10 mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center"
+    class="bg-[url('/hero-bg-svg.399ccfa0.svg')] bg-no-repeat md:bg-[95%] bg-[length:90%] sm:bg-[left_calc(50%)_top_calc(25%)] bg-[left_calc(50%)_top_calc(15%)] md:bg-[length:55%] sm:px-10 px-4 sm:py-16 py-10 mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center relative"
   >
     <h1
       class="md:w-[40%] font-bold md:text-4xl text-center md:text-left text-3xl"
+      x-text="$t('hero')"
     >
-      Привіт, ми — українські дівчата, котрі знайшли себе у Frontend-розробці
-      та прагнуть у ній розвиватися.
+      Привіт, ми - українські дівчата, котрі знайшли себе у front-end розробці
+      та прагнуть у ній розвиватись.
     </h1>
 
     <img
@@ -133,5 +136,28 @@
       src="/images/herosection.png"
       alt="Girls"
     />
+    <div
+      class="flex justify-center items-center absolute top-0 lg:top-8 right-0 m-4"
+      x-data="{toggle: 'uk'}"
+    >
+      <img src="/images/flag-uk.svg" alt="united kingdom flag" />
+      <div
+        class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
+        :class="[toggle === 'en' ? 'bg-pink-400' : 'bg-gray-400']"
+      >
+        <label
+          for="toggle"
+          class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+          :class="[toggle === 'en' ? 'translate-x-full border-pink-400' : 'translate-x-0 border-gray-400']"
+        ></label>
+        <input
+          type="checkbox"
+          id="toggle"
+          name="toggle"
+          class="appearance-none w-full h-full active:outline-none focus:outline-none"
+          @click="toggle === 'uk' ? toggle = 'en' : toggle = 'uk'; $locale(toggle)"
+        />
+      </div>
+    </div>
   </div>
 </section>
