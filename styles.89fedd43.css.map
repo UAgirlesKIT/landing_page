@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,cAAc,CACd,oBAAoB,CACpB,mBAAmB,CAEnB,YACE,KACE,oCACF,CACF","file":"styles.89fedd43.css","sourceRoot":"../src","sourcesContent":["@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  body {\n    font-family: \"Roboto Slab\", \"sans-serif\";\n  }\n}\n"]}
