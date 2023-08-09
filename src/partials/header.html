@@ -1,5 +1,5 @@
 <header
-  class="shadow-sm bg-purple-200 font-['roboto-slab'] bg-purple-200 w-full fixed top-0 z-50"
+  class="shadow-sm bg-purple-200 w-full fixed top-0 z-50"
   x-data="{ expanded: false, open: false }"
 >
   <div
@@ -116,21 +116,20 @@
 <!-- ............ -->
 <!-- hero section -->
 <section
-  class="flex items-center h-screen min-h-[600px] bg-purple-200 font-['roboto-slab'] bg-purple-200"
+  class="bg-purple-200 mx-auto flex justify-center items-center h-[calc(100vh+70px)] min-h-[600px]"
 >
-  <div
-    class="bg-[url('/hero-bg-svg.399ccfa0.svg')] bg-no-repeat md:bg-[95%] bg-[length:90%] sm:bg-[left_calc(50%)_top_calc(25%)] bg-[left_calc(50%)_top_calc(15%)] md:bg-[length:55%] sm:px-10 px-4 sm:py-16 py-10 mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center"
-  >
-    <h1
-      class="md:w-[40%] font-bold md:text-4xl text-center md:text-left text-3xl"
-    >
-      Привіт, ми — українські дівчата, котрі знайшли себе у Frontend-розробці
-      та прагнуть у ній розвиватися.
+  <div class="max-w-screen-xl text-center w-full sm:w-[70%]">
+    <h1 class="md:text-6xl font-bold text-4xl sm:text-5xl text-center">
+      <span class="bg-pink-400 font-thin p-1 rounded-full">UA</span>
+      Girls <br />
+      KEEP IN TECH
     </h1>
-
+    <h2 class="text-base my-3 md:text-2xl">
+      Спільнота українських веб-розробниць
+    </h2>
     <img
-      class="ml-auto md:w-[59%] w-[100%]"
-      src="/images/herosection.png"
+      class="mx-auto w-full md:w-[70%]"
+      src="./images/herosection.png"
       alt="Girls"
     />
   </div>
