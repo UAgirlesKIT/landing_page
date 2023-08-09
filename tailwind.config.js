@@ -11,11 +11,7 @@ module.exports = {
       "btn-cl": "#FF66C4",
       "accent-cl": "#FF27AC",
     },
-    extend: {
-      fontFamily: {
-        "roboto-slab": ["Roboto Slab", "serif"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
