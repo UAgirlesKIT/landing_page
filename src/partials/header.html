@@ -81,6 +81,7 @@
     x-show="expanded"
     @click.outside="expanded = false, open = false"
     x-collapse
+    x-cloak
   >
     <a
       href="#about_us"
@@ -116,19 +117,28 @@
 <!-- ............ -->
 <!-- hero section -->
 <section
-  class="bg-purple-200 mx-auto flex justify-center items-center h-[calc(100vh+70px)] min-h-[600px]"
+  class="bg-purple-200 mx-auto flex justify-center h-[100vh] items-center min-h-[600px]"
 >
-  <div class="max-w-screen-xl text-center w-full sm:w-[70%]">
-    <h1 class="md:text-6xl font-bold text-4xl sm:text-5xl text-center">
-      <span class="bg-pink-400 font-thin p-1 rounded-full">UA</span>
-      Girls <br />
-      KEEP IN TECH
-    </h1>
-    <h2 class="text-base my-3 md:text-2xl">
-      Спільнота українських веб-розробниць
-    </h2>
+  <div
+    class="max-w-screen-xl lg:flex lg:px-4 pt-16 items-center text-center w-full"
+  >
+    <div class="lg:w-[50%] lg:text-left">
+      <h1
+        class="md:text-6xl font-bold text-4xl sm:text-5xl lg:text-left text-center"
+      >
+        <span class="md:leading-[1.5]">
+          <span class="bg-pink-400 font-thin lg:p-2 p-1 rounded-full">UA</span>
+          Girls</span
+        >
+        <br />
+        KEEP IN TECH
+      </h1>
+      <h2 class="text-base my-3 md:text-2xl">
+        Спільнота українських веб-розробниць
+      </h2>
+    </div>
     <img
-      class="mx-auto w-full md:w-[70%]"
+      class="md:mx-auto w-full md:w-[50%]"
       src="./images/herosection.png"
       alt="Girls"
     />
